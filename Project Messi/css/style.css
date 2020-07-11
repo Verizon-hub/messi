@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+    
+}
+body {
+    width: 100%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+/* Header with Navbar */
+header {
+    height: 20vh;
+}
+.navbox {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-top: 25px;
+    padding-right: 45px;
+    font-size: 3vh;
+}
+.navbox div {
+    padding: 20px;
+}
+.navbox div a {
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+.navbox div a:hover {
+    border-top: solid green;
+    color: rgba(255,255,255,.3);
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+/* Main - Creating Box and than a messi box with information , overlay as absolute */
+
+main {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    
+}
+.flag-box {
+    display: flex;
+    background-image: url(https://i.pinimg.com/originals/92/0e/8f/920e8f39863a7c0a6467b38d471c5141.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 65%;
+    height: 40vh;
+    align-self: center;
+    border:  solid rgb(11, 184, 236);
+
+}
+.messi-box {
+    position: absolute;
+    display: grid;
+    
+    grid-template-rows: repeat(6,1fr);
+    width: 30%;
+    height: 70vh;
+    background: #787878;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    text-align: center;
+    border: #000000 solid;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 7px 5px rgba(167,255,164,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 7px 5px rgba(167,255,164,0);
+
+}
+.messi-box .messi-picture {
+    grid-row: span 2;
+    background-image: url(https://e0.365dm.com/20/02/768x432/skysports-lionel-messi-barcelona_4912914.jpg?20200206140754);
+    background-size: cover;
+    
+}
+.messi-box .personal-info {
+    color: antiquewhite;
+    padding: 10px;
+    align-self: center;
+    
+    
+}
+.personal-info b{
+    font-family: "Fondamento",sans-serif;
+}
+.personal-info a{
+      text-decoration: none;
+      color: rgb(243, 243, 243);
+      font-size: 2vh;
+      border-bottom: red solid 1px;
+}
+/* Story */
+.big-box {
+    width: 75%;
+    height: 70vh;
+    display: flex;
+    padding-left: 75px;
+    padding-right: 75px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.one-box {
+    width: 35%;
+    height: 60vh;
+    padding: 10px;
+    align-self: center;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    text-align: justify;
+    overflow: hidden;
+}
+.one-box:hover{
+    width: 70%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: all 1.5s;
+    z-index: 1;
+}
+.one-box p{
+    padding-top: 10px;
+    color: white;
+    font-size: 1.8vh;
+}
+.second-box {
+    position: relative;
+    width: 35%;
+    height: 60vh;
+    align-self: center;
+    background-image: url(https://i.ytimg.com/vi/ucQaPfjufIQ/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.second-box:hover{
+    width: 80%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: all 1.5s;
+}
+.third-box {
+    width: 35%;
+    height: 60vh;
+    padding: 10px;
+    overflow: hidden;
+    align-self: center;
+    color: white;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+.third-box h3 {
+    
+    color: black;
+    padding: 5px;
+}
+.third-box p {
+    font-size: 1.8vh;
+}
+.third-box:hover{
+    width: 70%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: all 1.5s;
+    z-index: 1;
+}
+/* Footer */
+footer {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ @media (max-width: 600px) {
+     /* Header + Navbar */
+      .navbox {
+          font-size: 15px;
+          padding: 10px;
+          float: right;
+      }
+      .navbox div {
+          padding: 5px;
+      }
+      /* Main + Messi box /home */
+      .messi-box{
+        width: 50%;   
+   }
+   .messi-picture {
+    background-position: center;
+   }
+   .messi-box .personal-info{
+       font-size: 10px;
+       padding: 0px;
+   }
+   .personal-info a {
+       font-size: 10px;   
+   }
+   footer {
+       font-size: 11px;
+   }
+   /* Story */
+   .big-box {
+     width: 100%;
+     padding-left: 2px;
+     padding-right: 0px;
+   }
+   .one-box{
+       overflow-y: auto;
+       padding: 5px;
+       width: 50%;
+       font-size: 15px;
+       float: left;
+       padding-left: 5px;
+       padding-right: 5px;
+   } 
+   .one-box:hover {
+       width: 50%;
+   }
+   .second-box{
+       
+       width: 0;
+   }
+   .third-box {
+    position: relative;
+    width: 50%;
+    font-size: 15px;
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-y: auto;
+   }
+   .third-box:hover{
+       width: 50%;
+   }
+} 
+
