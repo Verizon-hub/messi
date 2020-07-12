@@ -209,6 +209,45 @@ main {
 .textbox p {
     font-size: 16px;
 }
+/* Argentina */
+.arg-box-one {
+    width: 40%;
+    height: 50vh;
+    margin-right: 0%;
+    background-image: url(https://i.pinimg.com/originals/c1/00/0a/c1000a6c192270df8ca810002edb0bec.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+
+}
+.arg-box-one h2 {
+    text-align: center;
+    padding: 10px;
+}
+.arg-box-two {
+    width: 40%;
+    height: 50vh;
+    margin-top: 9.5%;
+    background-image: url(https://i.pinimg.com/originals/c1/00/0a/c1000a6c192270df8ca810002edb0bec.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+    
+}
+.arg-box-two h2 {
+    text-align: center;
+    padding: 10px;
+}  
 /* Footer */
 footer {
     display: flex;
