@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -43,7 +44,6 @@ main {
     display: flex;
     height: 70vh;
     justify-content: center;
-    
 }
 .flag-box {
     display: flex;
@@ -166,6 +166,49 @@ main {
     transition: all 1.5s;
     z-index: 1;
 }
+/* Barcelona */
+.cleanbox1 {
+    margin-right: 40%;
+    width: 20%;
+    height: 70vh;
+    background-image: url(https://lh3.googleusercontent.com/proxy/8bYvGB6b-Pr0jQcW_DpWCm1qPOiZWMUXEUa3wmxhY7q56W6coPNd0LvohRwMqnpbx-t01mHsFZyUteCPXEtyyqzThVCyHy-HV2kR6Wm-1PLpuln00c6o7fpRnj0RMNV84t6kEBql0wIaeirWXzxAFBVJ1LM);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 6px 9px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 6px 9px 5px rgba(0,0,0,0);
+}
+.cleanbox2 {
+    width: 20%;
+    height: 20vh;
+    background-image: url(https://lh3.googleusercontent.com/proxy/9Vcx1CphseRE9mCpAWZdNiQRUDviEW2yXFWJ06FFCieBJajk3xnH_TvqbYUDWiC9gxXbxMJMFQ9fwj83Y2eneA8rAECbEKItO_GwqQKO4ruQrEQH8QQIQP8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.textbox{
+    position: absolute;
+    font-family: "Teki",sans-serif;
+    padding: 10px;
+    width: 60%;
+    height: 50vh;
+    border: #000000 solid;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    align-self: center;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.textbox h3 {
+    text-align: center;
+    padding: 20px;
+}
+.textbox p {
+    font-size: 16px;
+}
 /* Footer */
 footer {
     display: flex;
@@ -221,7 +264,6 @@ footer {
        width: 50%;
    }
    .second-box{
-       
        width: 0;
    }
    .third-box {
@@ -236,5 +278,66 @@ footer {
    .third-box:hover{
        width: 50%;
    }
+   /* Barcelona */
+   .textbox {
+    width: auto;
+    overflow-y: auto;
+     height: 70vh;
+     font-size: 10px;
+     padding: 0;
+   }
+   .textbox h3 {
+       padding: 5px;
+   }
+   ::-webkit-scrollbar{
+       display: none;
+   }
+   .textbox p {
+       font-size: 11px;
+    
+       padding: 10px;
+   }
+   .cleanbox2{
+       display: none;
+      
+   }
+   .textbox ::-webkit-scrollbar{
+    display: none;
+}
 } 
+@media (max-width:360px) {
+    /* Barcelona */
+    .cleanbox2 {
+        margin-top: -128px
+    }
+}
+@media (min-width: 1024px) {
+    /* Story */
+    .one-box:hover{
+        overflow-y: auto;
+        width: 35%;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .second-box:hover{
+        width: 35%;
+    }
+    .third-box:hover {
+        overflow-y: auto;
+        width: 35%;
+        
+    }
+    .third-box:hover ul {
+        font-size: 16px;
+    }
+    /* Barcelona */
+    .textbox {
+        /* overflow-y: auto; */
+        overflow-y: auto;
+    }
+    .textbox ::-webkit-scrollbar{
+        display: none;
+    }
+}
 
